@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Navbar Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.content iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="" target="content">Present Tense</a></li>
+                <li><a href="persent.html" target="content">Past Tense</a></li>
+                <li><a href="page3.html" target="content">Future Tense</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </div>
+          <div class="section">
+            <h3>parts of speech </h3>
+            <ul>
+                <li><a href="#" target="content">noun</a></li>
+                <li><a href="#" target="content">pronoun</a></li>
+                <li><a href="#" target="content">verb</a></li>
+                <li><a href="#" target="content">adjective,</a></li>
+                <li><a href="#" target="conten"> adverb</a></li>
+                <li><a href="#"target="content"> preposition</a></li>
+                <li><a href="#"target="content-"> conjunction</a></li>
+                <li><a href="#"target="content>interjection</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>voice</h3>
+            
+                <li><a href="#">active voice</a></li>
+                <li><a href="#">passive voice</a></li>
+            
+            </ul>
+        </div>
+        <div class="section">
+            <h3>narraion</h3>
+            <ul>
+                <li><a href="#">English-Forum</a></li>
+                <li><a href="#">Daily English Lesson</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Read Top News</a></li>
+                <li><a href="#">Parents</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <iframe name="content" src="page1.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>

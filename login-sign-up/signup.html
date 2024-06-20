@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FluentEnglishHUB</title>
+    <link rel="icon" href="/assets/icon.PNG" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Additional custom styles */
+    .error-message {
+      color: red;
+      
+    }
+    h5{
+        text-align: center;
+
+    }
+    .btn {
+        height: 50px;
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 450px;
+        margin-top: 20px;
+        color: #fff;
+        border-radius: 20px;
+        background-color: black;
+      }
+      .btn:hover {
+        background-color: yellow;
+      
+        height: 50px;
+        width: 200px;
+        color: black;
+      }
+    
+    .footer-botom{
+        margin-top: 60px;
+        text-align: center;
+        font-family: "Gtsuper";
+        font-weight: 900;
+        font-style: normal;
+        
+    }
+    body{
+        background-color:#fff;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    
+    <h5>Already have an account? <a href="login.html">Log in</a></h5>
+    <form id="registrationForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+        <small class="error-message" id="nameError"></small>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+        <small class="error-message" id="emailError"></small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+        <small class="error-message" id="passwordError"></small>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" class="form-control" id="mobile" name="mobile" required>
+        <small class="error-message" id="mobileError"></small>
+      </div>
+      
+      <div class="form-group">
+        <label for="english_level">English Proficiency Level</label>
+        <select class="form-control" id="english_level" name="english_level" required>
+          <option value="">Select English Proficiency Level</option>
+          <option value="beginner Level">beginner Level</option>
+          <option value="intermediate">Intermediate Level</option>
+          <option value="advanced">Advanced Level</option>
+        </select>
+        <small class="error-message" id="levelError"></small>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+  </div>
+  <footer>
+    <div class="footer-botom">
+      <p>copyright &copy;2024: <span class="designer">All Rights Reserved. </span></p>
+    </div>
+  </footer>
+ 
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Custom JavaScript for form validation -->
+  <script>
+    function validateForm() {
+      // Validate name
+      var name = document.getElementById('name').value;
+      if (name.trim() == '') {
+        document.getElementById('nameError').innerText = 'Please enter your name';
+        return false;
+      } else {
+        document.getElementById('nameError').innerText = '';
+      }
+
+      // Validate email
+      var email = document.getElementById('email').value;
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        document.getElementById('emailError').innerText = 'Please enter a valid email address';
+        return false;
+      } else {
+        document.getElementById('emailError').innerText = '';
+      }
+
+      // Validate password
+      var password = document.getElementById('password').value;
+      if (password.length < 8) {
+        document.getElementById('passwordError').innerText = 'Password must be at least 8 characters long';
+        return false;
+      } else {
+        document.getElementById('passwordError').innerText = '';
+      }
+
+      // Validate mobile number
+      var mobile = document.getElementById('mobile').value;
+      var mobileRegex = /^\d{10}$/;
+      if (!mobileRegex.test(mobile)) {
+        document.getElementById('mobileError').innerText = 'Please enter a 10-digit mobile number';
+        return false;
+      } else {
+        document.getElementById('mobileError').innerText = '';
+      }
+
+      // Validate gender
+      var gender = document.getElementById('gender').value;
+      if (gender == '') {
+        document.getElementById('genderError').innerText = 'Please select your gender';
+        return false;
+      } else {
+        document.getElementById('genderError').innerText = '';
+      }
+
+      // Validate English proficiency level
+      var level = document.getElementById('english_level').value;
+      if (level == '') {
+        document.getElementById('levelError').innerText = 'Please select your English proficiency level';
+        return false;
+      } else {
+        document.getElementById('levelError').innerText = '';
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>
