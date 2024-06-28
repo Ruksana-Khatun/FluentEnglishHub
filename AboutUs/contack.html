@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="icon" href="/assets/icon.PNG" />
+   <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+   
     <style>
         body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
@@ -57,19 +64,162 @@ ul li {
     font-size: 24px;
     color: #555;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica "Gtsuper";
+  
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  
+}
+
+.header {
+  position: fixed;
+  height: 5.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0, 1rem;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 350px;
+  height: 70px;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 3.5rem;
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: black;
+  font-family: "GTSuper";
+  transition: all 0.3s;
+}
+.navbar-link:hover,
+.navbar-link:active {
+  color: darkorange;
+}
+.mobile-nav-icon {
+  height: 2rem;
+  width: 2rem;
+  color: #212529;
+}
+.mobile-nav- {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+.btn {
+  position: relative;
+  background-color: rgb(243, 243, 31);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(233, 245, 103);
+}
+@media (max-width: 65rem) {
+  .mobile-nav- {
+    display: block;
+    z-index: 999;
+    margin-right: 25px;
+  }
+  .navbar {
+    /* display: none;    */
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: translateX(100%);
+    transition: all 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
+  }
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .active .mobile-nav- .mobile-nav-icon[name="close-outline"] {
+    display: block;
+    margin-right: 10px;
+  }
+  .active .mobile-nav- .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+}
+
+.navbar-link {
+  text-align: center;
+}
 
     </style>
 </head>
 <body>
+    <header class="header1">
+        <div class="header">
+       <a href="/index.html"><img src="/assets/logo.png" alt="FluentEnglishHUB" class="logo"></a>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a class="navbar-link" href="/grammar/Tense.html">Grammar</a></li>
+            <li><a class="navbar-link" href="/grammar/courses/coursee.html">Course</a></li>
+            <li><a class="navbar-link" href="/grammar/courses/blog.html">Blog</a></li>
+            <li><a class="navbar-link" href="#">Video-call</a></li>
+            <li><a  class="navbar-link" href="/login-sign-up/login.html">login</a></li>
+            <li><button class="btn btn-warning"><a class="navbar-link"  href="/login-sign-up/signup.html">Sign-UP</a></button></li>
+  
+          </ul>
+        </nav>
+        <div class="mobile-nav-">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+      </header>
+    </div>
     <div class="container">
         <div class="section-title">
             <h2>Contact Us</h2>
         </div>
         <p>We’d love to hear from you! Whether you have a question about our services, need assistance, or just want to give feedback, feel free to reach out to us through the following channels:</p>
         <ul>
-            <li><strong>Email:</strong> support@fehub.com</li>
+            <li><strong>Email:</strong> ruksanasultan74@gmail.com</li>
             <li><strong>Phone:</strong> +91 9334011403</li>
-            <li><strong>Address:</strong> 123 Learning Lane, Education City, India</li>
+            <li><strong>Address:</strong> patna City, India</li>
         </ul>
         <div class="footer-social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -80,5 +230,19 @@ ul li {
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        const mobile_btn=document.querySelector(".mobile-nav-");
+
+const nav_header=document.querySelector(".header1")
+
+
+
+ const toggleNavbar= ()=>{
+  nav_header.classList.toggle("active")
+ }
+
+
+mobile_btn.addEventListener("click",() => toggleNavbar());
+    </script>
 </body>
 </html>

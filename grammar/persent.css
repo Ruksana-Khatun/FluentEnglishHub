@@ -10,8 +10,9 @@ body {
 }
 
 .heading {
-    font-weight: bold;
+    font-weight: 500;
     margin-left: 40%;
+    font-weight: bold;
 }
 
 .underline1 {
@@ -40,7 +41,7 @@ th {
     margin-bottom: 20px;
 }
 .heading {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 .underline {
@@ -49,7 +50,7 @@ th {
     background: #333;
     margin-bottom: 20px;
 }
-.section {
+/* .section {
     margin-bottom: 20px;
 }
 .section h4 {
@@ -57,4 +58,4 @@ th {
 }
 .section p {
     margin-bottom: 5px;
-}
+} */
