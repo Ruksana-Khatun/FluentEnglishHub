@@ -1,3 +1,10 @@
+![FluentEnglishHUB - Google Chrome 5_2_2025 5_31_08 PM](https://github.com/user-attachments/assets/5ad31195-831d-4cb2-9faf-b034d0e3f203)
+![FluentEnglishHUB - Google Chrome 5_2_2025 5_32_14 PM](https://github.com/user-attachments/assets/1396f8ca-c31f-4ae7-bd46-245f1715e95e)
+![FluentEnglishHUB - Google Chrome 5_2_2025 5_32_56 PM](https://github.com/user-attachments/assets/279e7e7f-2361-4f00-9f24-c4a552868df5)
+
+
+
+
 # 🌍 Fluent English Hub
 
 **Fluent English Hub** is a simple yet effective website designed to help users improve their English skills. It provides interactive content, vocabulary exercises, grammar lessons, and basic communication practice.
