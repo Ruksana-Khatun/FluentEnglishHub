@@ -173,6 +173,30 @@
       }
 
       return true;
+      const API = "http://localhost:5000/api/auth";
+
+document.getElementById("signupForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
+  const mobile = document.getElementById("mobile").value.trim();
+  const englishLevel = document.getElementById("englishLevel").value;
+
+  const res = await fetch(`${API}/register`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify({ name, email, password, mobile, englishLevel }),
+  });
+
+  const data = await res.json();
+  document.getElementById("msg").textContent = data.message || JSON.stringify(data);
+
+  if (res.ok) {
+    window.location.href = "/login-sign-up/login.html";
+  }
+});
     }
   </script>
 </body>
