@@ -21,6 +21,7 @@
 - **CSS** – Styling and responsive design
 - **JavaScript** – Interactive features & basic functionalities
 
+
 ## 🔧 Installation & Setup
 1. **Clone the repository:**
    ```sh
