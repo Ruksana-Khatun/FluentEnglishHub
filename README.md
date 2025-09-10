@@ -7,19 +7,24 @@
 
 # 🌍 Fluent English Hub
 
-**Fluent English Hub** is a simple yet effective website designed to help users improve their English skills. It provides interactive content, vocabulary exercises, grammar lessons, and basic communication practice.
+**Fluent English Hub** is a simple yet effective website designed to help users improve their English skills. It provides interactive content, vocabulary exercises, grammar lessons, and basic communication practice and video call with real time chat.
 
 ## 🚀 Features
 - 🎯 **Learn Grammar** – Easy-to-understand grammar explanations.
 - 📖 **Vocabulary Builder** – Improve English with word lists & exercises.
 - 🎙️ **Basic Conversations** – Learn common phrases for daily communication.
-- 🌐 **Simple & Responsive UI** – Clean, mobile-friendly design.
+- 🌐 **Simple & Responsive UI** – Clean, 
+ - **Live Chat + Video Call** – Practice English with real-time chat and video
+mobile-friendly design.
 - ⚡ **Interactive Elements (JavaScript)** – Basic animations & dynamic features.
 
 ## 🛠️ Tech Stack
-- **HTML** – Structure of the website
-- **CSS** – Styling and responsive design
-- **JavaScript** – Interactive features & basic functionalities
+ ## Frontend: HTML, CSS, JavaScript, React.js
+
+ ## Backend: Node.js, Express.js
+
+ ## Database: MongoDB
+
 
 
 ## 🔧 Installation & Setup
@@ -27,13 +32,21 @@
    ```sh
    git clone https://github.com/Ruksana-khatun/fluent-english-hub.git
    cd fluent-english-hub
+   cd backend
+   Install dependencies
+   npm install
+   cd src
+   nodemon app.js/node app.js
+   cd frontend
+   Install dependencies
+   npm install
+   Run the app
+    npm start
+    http://localhost:3000/
+    Run the main file
+    index.html open with live server
 
-
-   📌 Roadmap
-   Future updates and features that will be added to Fluent English Hub:
- Quiz Section – English skills ko test karne ke liye quizzes.
- Advanced Grammar Lessons – Detailed grammar concepts for advanced learners.
- Interactive Chatbot – Practice English with a chatbot for conversation.
- More Vocabulary Exercises – Add vocabulary exercises based on difficulty levels.
- User Authentication – Allow users to save their progress.
-
+Here is VIDEO call slide image
+![alt text](image.png)
+   ![alt text](<WhatsApp Image 2025-09-06 at 14.15.28_c8d60cd8.jpg>)
+   ![alt text](image-1.png)
